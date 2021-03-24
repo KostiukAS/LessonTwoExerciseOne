@@ -41,11 +41,6 @@ class ViewController: UIViewController {
         blueSlider.maximumValue = 1
         blueSlider.minimumValue = 0
         
-        // Setup text fields
-        redTextField.text = "0"
-        greenTextField.text = "0"
-        blueTextField.text = "0"
-        
         // Setup labels
         redNumber.text = String(redSlider.value)
         greenNumber.text = String(greenSlider.value)
@@ -55,18 +50,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func redSliderValueChanging() {
+        redSlider.value = round(redSlider.value * 100) / 100
         redNumber.text = String(redSlider.value)
+        
     }
     
     @IBAction func greenSliderValueChanging() {
+        greenSlider.value = round(greenSlider.value * 100) / 100
         greenNumber.text = String(greenSlider.value)
     }
     
     @IBAction func blueSliderValueChanging() {
+        blueSlider.value = round(blueSlider.value * 100) / 100
         blueNumber.text = String(blueSlider.value)
     }
     
     @IBAction func redTextFieldEditing() {
+        
     }
     
     @IBAction func greenTextFieldEditing() {
