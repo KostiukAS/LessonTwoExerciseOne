@@ -74,7 +74,6 @@ class ViewController: UIViewController {
         redNumber.text = String(redColorNumber)
         redSlider.value = redColorNumber
         colorView.backgroundColor = UIColor(red: CGFloat(redColorNumber), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
-        
     }
     
     @IBAction func greenTextFieldEditing() {
