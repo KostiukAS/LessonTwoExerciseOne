@@ -52,27 +52,45 @@ class ViewController: UIViewController {
     @IBAction func redSliderValueChanging() {
         redSlider.value = round(redSlider.value * 100) / 100
         redNumber.text = String(redSlider.value)
+        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
         
     }
     
     @IBAction func greenSliderValueChanging() {
         greenSlider.value = round(greenSlider.value * 100) / 100
         greenNumber.text = String(greenSlider.value)
+        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
     
     @IBAction func blueSliderValueChanging() {
         blueSlider.value = round(blueSlider.value * 100) / 100
         blueNumber.text = String(blueSlider.value)
+        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
     
     @IBAction func redTextFieldEditing() {
+        guard let redColorString = redTextField.text else { return }
+        guard let redColorNumber = Float(redColorString) else { return }
+        redNumber.text = String(redColorNumber)
+        redSlider.value = redColorNumber
+        colorView.backgroundColor = UIColor(red: CGFloat(redColorNumber), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
         
     }
     
     @IBAction func greenTextFieldEditing() {
+        guard let greenColorString = greenTextField.text else { return }
+        guard let greenColorNumber = Float(greenColorString) else { return }
+        greenNumber.text = String(greenColorNumber)
+        greenSlider.value = greenColorNumber
+        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenColorNumber), blue: CGFloat(blueSlider.value), alpha: 1)
     }
     
     @IBAction func blueTextFieldEditing() {
+        guard let blueColorString = blueTextField.text else { return }
+        guard let blueColorNumber = Float(blueColorString) else { return }
+        blueNumber.text = String(blueColorNumber)
+        blueSlider.value = blueColorNumber
+        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueColorNumber), alpha: 1)
     }
     
 }
