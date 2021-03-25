@@ -30,12 +30,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LhU-qC-K5w">
-                                <rect key="frame" x="362" y="275" width="32" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LhU-qC-K5w">
+                                <rect key="frame" x="357" y="275" width="37" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
-                                    <action selector="redTextFieldEditing" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Fu4-rM-hVT"/>
+                                    <action selector="redTextFieldEditing" destination="BYZ-38-t0r" eventType="editingDidEnd" id="gdy-Pd-jXE"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2a-X3-9k1">
@@ -45,17 +45,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="haT-F6-Hln">
-                                <rect key="frame" x="117.33333333333333" y="337" width="227.66666666666669" height="31"/>
+                                <rect key="frame" x="117.33333333333333" y="337" width="222.66666666666669" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                 <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="greenSliderValueChanging" destination="BYZ-38-t0r" eventType="valueChanged" id="QHi-YA-gRC"/>
                                 </connections>
                             </slider>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SHy-ld-KBZ">
-                                <rect key="frame" x="362" y="334" width="32" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SHy-ld-KBZ">
+                                <rect key="frame" x="357" y="334" width="37" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
                                 <connections>
                                     <action selector="greenTextFieldEditing" destination="BYZ-38-t0r" eventType="editingDidEnd" id="RHp-ar-x8r"/>
                                 </connections>
@@ -67,7 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RtI-Pp-qQH">
-                                <rect key="frame" x="117.33333333333333" y="399" width="221.66666666666669" height="31"/>
+                                <rect key="frame" x="117.33333333333333" y="399" width="216.66666666666669" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                 <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -87,7 +87,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="atp-Mg-DNo">
-                                <rect key="frame" x="116.66666666666667" y="275" width="228.33333333333331" height="31"/>
+                                <rect key="frame" x="116.66666666666667" y="275" width="223.33333333333331" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                 <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -100,20 +100,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n9h-OI-9xq">
-                                <rect key="frame" x="362" y="396" width="32" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n9h-OI-9xq">
+                                <rect key="frame" x="357" y="396" width="37" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
                                 <connections>
                                     <action selector="blueTextFieldEditing" destination="BYZ-38-t0r" eventType="editingDidEnd" id="DCT-or-IHc"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ab-4K-ykV">
+                                <rect key="frame" x="127.66666666666669" y="459" width="159" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="159" id="D0X-E3-8uh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="QWq-0w-qap"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n9h-OI-9xq" secondAttribute="trailing" constant="20" id="3p3-kB-CPv"/>
                             <constraint firstItem="atp-Mg-DNo" firstAttribute="top" secondItem="HSX-Er-qWF" secondAttribute="bottom" constant="60" id="4dl-dF-Amk"/>
+                            <constraint firstItem="8Ab-4K-ykV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4kN-Cz-H97"/>
                             <constraint firstItem="O0D-nM-l12" firstAttribute="top" secondItem="jYQ-5r-Kn0" secondAttribute="bottom" constant="45" id="5GE-p9-Sne"/>
                             <constraint firstItem="haT-F6-Hln" firstAttribute="top" secondItem="atp-Mg-DNo" secondAttribute="bottom" constant="32" id="7zB-eK-upi"/>
                             <constraint firstItem="haT-F6-Hln" firstAttribute="leading" secondItem="M2a-X3-9k1" secondAttribute="trailing" constant="15" id="BVJ-ca-5RE"/>
@@ -123,6 +137,7 @@
                             <constraint firstItem="jYQ-5r-Kn0" firstAttribute="top" secondItem="0Yh-ko-cPb" secondAttribute="bottom" constant="45" id="HpY-bD-tRD"/>
                             <constraint firstItem="atp-Mg-DNo" firstAttribute="leading" secondItem="rCo-Ju-HnI" secondAttribute="trailing" constant="31" id="Lqq-nu-JaT"/>
                             <constraint firstItem="M2a-X3-9k1" firstAttribute="top" secondItem="rCo-Ju-HnI" secondAttribute="bottom" constant="45" id="N2Q-ON-5K9"/>
+                            <constraint firstItem="8Ab-4K-ykV" firstAttribute="top" secondItem="RtI-Pp-qQH" secondAttribute="bottom" constant="30" id="QfJ-K2-Y4T"/>
                             <constraint firstItem="LhU-qC-K5w" firstAttribute="top" secondItem="HSX-Er-qWF" secondAttribute="bottom" constant="60" id="Qjo-qG-2Sw"/>
                             <constraint firstItem="LhU-qC-K5w" firstAttribute="leading" secondItem="atp-Mg-DNo" secondAttribute="trailing" constant="19" id="R1e-8e-oB1"/>
                             <constraint firstItem="0Yh-ko-cPb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Rsz-Fz-5bt"/>
@@ -151,6 +166,7 @@
                         <outlet property="blueSlider" destination="RtI-Pp-qQH" id="mSf-TZ-7gP"/>
                         <outlet property="blueTextField" destination="n9h-OI-9xq" id="yOa-lg-YfW"/>
                         <outlet property="colorView" destination="HSX-Er-qWF" id="ZXl-Bf-Js9"/>
+                        <outlet property="doneButton" destination="8Ab-4K-ykV" id="cvm-Vh-Oqh"/>
                         <outlet property="greenNumber" destination="M2a-X3-9k1" id="Yf8-Nw-B5y"/>
                         <outlet property="greenSlider" destination="haT-F6-Hln" id="glK-FM-YIb"/>
                         <outlet property="greenTextField" destination="SHy-ld-KBZ" id="Tu5-IK-5fK"/>
@@ -179,6 +195,9 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     @IBOutlet var blueSlider: UISlider!
     @IBOutlet var blueTextField: UITextField!
     
+    @IBOutlet var doneButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,6 +48,8 @@ class ViewController: UIViewController {
         greenNumber.text = String(greenSlider.value)
         blueNumber.text = String(blueSlider.value)
         
+        // Setup button
+        doneButton.isHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -69,6 +73,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func redTextFieldEditing() {
+        doneButton.isHidden = false
         guard let redColorString = redTextField.text else { return }
         guard let redColorNumber = Float(redColorString) else { return }
         redNumber.text = String(redColorNumber)
@@ -90,6 +95,10 @@ class ViewController: UIViewController {
         blueNumber.text = String(blueColorNumber)
         blueSlider.value = blueColorNumber
         colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueColorNumber), alpha: 1)
+    }
+    
+    @IBAction func doneButtonPressed() {
+        
     }
     
 }
