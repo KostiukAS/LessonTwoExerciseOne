@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         blueNumber.text = String(blueSlider.value)
         
         // Setup button
-        doneButton.isHidden = true
+        doneButton.isHidden = false
         // Do any additional setup after loading the view.
     }
     
@@ -98,7 +98,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed() {
-        
+        redTextField.resignFirstResponder()
+        greenTextField.resignFirstResponder()
+        blueTextField.resignFirstResponder()
     }
     
 }
